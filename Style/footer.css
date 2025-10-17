@@ -1,0 +1,170 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+footer {
+  padding: 0;
+  margin: 0;
+  background-color: #0b3a53;
+  color: white;
+}
+.footer-top{
+  padding-top: 60PX;
+}
+.icon-dotted-border {
+  border: 2px dotted white; 
+  border-radius: 50%; 
+  padding: 15px;
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center;
+  color: white; 
+  font-size: 1.5rem;
+  width: 60px;
+  height: 60px; 
+}
+
+.footer-middle{
+  margin-top: 40px;
+}
+footer .footer-title {
+  font-weight: bold;
+  margin-bottom: 35px;
+  margin-left: 25px;
+}
+
+
+footer .divider {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+footer .divider span {
+  height: 3px;
+  width: 20px;
+  background-color: #f57c00;
+  margin-right: 5px;
+}
+
+footer .divider hr {
+  flex-grow: 1;
+  border: none;
+  height: 1px;
+  background-color: white;
+}
+
+footer .text-white{
+  text-decoration: none;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+.social-icons a {
+  display: flex; /* Change to flex */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  color: white;
+  margin-right: 10px;
+  font-size: 1.3rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px; /* Keep this to center icon within the button */
+}
+
+
+.social-icons a:hover {
+  background-color: #f57c00;
+  transition: 1s;
+}
+
+.floating-image {
+  position: absolute;
+  animation: floatAnimation 3s ease-in-out infinite;
+  display: inline-block;
+  margin-top: 210px;
+}
+ 
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(-10px); 
+  }
+  100% {
+    transform: translateY(10px); 
+  }
+}
+
+
+.book-item {
+  display: flex;
+  align-items: center;
+  transition: transform 0.6s ease;
+}
+
+.book-item:hover {
+  transform: translateX(6px);
+}
+
+.book-item i{
+  margin-right: 10px;
+}
+
+.book-item a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.book-item :hover {
+  color: #f57c00 !important ;
+}
+
+
+.newsletter input {
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #003d5b;
+}
+
+.newsletter button {
+  border-radius: 0 5px 5px 0;
+  background-color: #003d5b;
+  border: none;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #f57c00;
+  transition: 1s;
+}
+
+.footer-bottom{
+  background-color: #036280;
+  color: white;
+  margin-top: 60px;
+  height: 80px;
+  width: auto;
+  padding: 0 10px 0 10px;
+}
+.payment-icons img {
+  width: 50px; 
+  height: 40px; 
+  margin-left: 10px;
+  border-radius: 8px; 
+  border: 2px solid rgba(255, 255, 255, 0.3); 
+  padding: 2px;
+  cursor: pointer;
+}
+

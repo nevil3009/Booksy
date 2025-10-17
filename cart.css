@@ -1,0 +1,513 @@
+.page-navigation-wrapper {
+  position: relative;
+  overflow: hidden;
+  background: #e6eff2;
+  padding: 173px 0;
+}
+
+.book1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.book2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.page-heading h1 {
+  color: #012e4a;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  position: relative;
+  z-index: 9;
+}
+
+.custom-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.custom-navigation li {
+  color: #036280;
+  text-transform: capitalize;
+  list-style: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: capitalize;
+}
+
+.custom-navigation li i {
+  color: #012e4a;
+  font-size: smaller;
+  font-weight: bolder;
+}
+
+.custom-navigation li a {
+  color: #012e4a;
+  text-decoration: none;
+}
+
+.custom-navigation li a:hover {
+  color: #012e4a;
+  text-decoration: none;
+}
+
+.cart-container {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.cart-footer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cart-footer-actions form {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.cart-footer-actions form input {
+  padding: 5px 15px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+  height: 50px;
+}
+
+button,
+a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.theme-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  position: relative;
+  text-decoration: none !important;
+}
+
+.cart-footer-actions form .theme-btn {
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #ff6500;
+  transition: color 0.3s ease;
+}
+
+.cart-footer-actions form .theme-btn:hover {
+  color: #e55a00;
+}
+
+.cart-footer-actions form .theme-btn::before {
+  display: none;
+}
+
+.update-btn,
+.cart-footer-actions .theme-btn:not(form .theme-btn) {
+  background-color: #ff6500;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.cart-summary {
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  height: auto;
+  min-height: 0;
+}
+
+.cart-summary .table {
+  margin-bottom: 20px;
+}
+
+.cart-summary .table thead tr th {
+  color: #1a1a1a;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cart-summary .table tbody tr td .sub-title {
+  color: #4f536c;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cart-summary .table tbody tr td .sub-price {
+  color: #012e4a;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cart-summary .table tbody tr td .sub-price-total {
+  color: #ff6500;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cart-summary .theme-btn {
+  border-radius: 6px;
+  background-color: #ff6500;
+  border: none;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none !important;
+  transition: background-color 0.3s ease;
+}
+
+.cart-summary .theme-btn:hover {
+  background-color: #e55a00;
+}
+
+.row.g-5 {
+  align-items: flex-start;
+}
+
+.col-xl-9,
+.col-xl-3 {
+  margin-top: 0;
+}
+
+.table-responsive {
+  margin-bottom: 0;
+}
+
+.checkout-action-btn {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  background-color: #036280;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 30px;
+  transition: color 0.3s ease-in-out;
+  display: inline-block;
+  z-index: 1;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+.checkout-action-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ff6500;
+  border-radius: 6px;
+  transition: left 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.checkout-action-btn:hover::before {
+  left: 0;
+}
+
+.checkout-action-btn:hover {
+  color: white;
+}
+
+.cart-item {
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.item-container {
+  display: flex;
+  padding: 20px;
+  position: relative;
+}
+
+/* Book Image Styling */
+.product-image-container {
+  width: 120px;
+  height: 180px;
+  margin-right: 20px;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+}
+
+.book-cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Book Details Styling */
+.book-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #012e4a;
+  margin-bottom: 5px;
+}
+
+.book-author {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.book-isbn {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* Availability Indicators */
+.availability-indicators {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #4f536c;
+}
+
+.indicator i {
+  color: #00a651;
+  margin-right: 5px;
+}
+
+/* Price and Quantity Row */
+.price-quantity-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-control span {
+  font-size: 16px;
+  color: #4f536c;
+}
+
+.quantity-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.decrease-btn,
+.increase-btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: #f5f5f5;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s ease;
+}
+
+.decrease-btn:hover,
+.increase-btn:hover {
+  background: #e5e5e5;
+}
+
+.qty-input {
+  width: 40px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+}
+
+.price-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.item-price {
+  font-size: 14px;
+  color: #4f536c;
+}
+
+.item-subtotal {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff6500;
+}
+
+/* Remove Button Styling */
+.remove-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: #ff6500;
+  color: white;
+}
+
+.empty-cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  margin: 30px 0;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.empty-cart-icon {
+  font-size: 80px;
+  color: #d0d0d0;
+  margin-bottom: 25px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.empty-cart-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.empty-cart-message {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+/* Visual book elements */
+.floating-books {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.floating-book {
+  position: absolute;
+  transform: rotate(var(--rotation));
+  opacity: 0.8;
+  animation: floatBook 4s ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+
+.floating-book.book1 {
+  left: calc(50% - 120px);
+  --rotation: -15deg;
+  --delay: 0s;
+}
+
+.floating-book.book2 {
+  left: calc(50% - 30px);
+  --rotation: 5deg;
+  --delay: 0.5s;
+}
+
+.floating-book.book3 {
+  left: calc(50% + 60px);
+  --rotation: -10deg;
+  --delay: 1s;
+}
+
+@keyframes floatBook {
+  0% {
+    transform: translateY(0) rotate(var(--rotation));
+  }
+
+  50% {
+    transform: translateY(-20px) rotate(var(--rotation));
+  }
+
+  100% {
+    transform: translateY(0) rotate(var(--rotation));
+  }
+}
